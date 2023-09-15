@@ -35,9 +35,9 @@ App]](https://movieapp-hng.netlify.app/)
 
 ## 
 
-## ![](vertopal_011e8e94857c47a6b2352b6d6e99bf53/media/image2.png)
+## ![](/media/image2.png)
 
-## ![](vertopal_011e8e94857c47a6b2352b6d6e99bf53/media/image1.png)
+## ![](3/media/image1.png)
 
 ## 
 
