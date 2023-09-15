@@ -37,7 +37,7 @@ App]](https://movieapp-hng.netlify.app/)
 
 ## ![](/media/image2.png)
 
-## ![](3/media/image1.png)
+## ![](/media/image1.png)
 
 ## 
 
