@@ -11,9 +11,10 @@
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
+    margin-bottom: 2em;
     /* padding: 20px; */
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
     /* position: relative; */
     /* top: -100px; */
@@ -22,13 +23,15 @@
 
 /* src/components/MovieCard.css */
 .moviecard {
-    width: 60%;
+    width: 70%;
+    height: 20%;
     display: flex;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 10px;
+    margin-top: 20px;
+    margin-right: 5%;
     padding: 10px;
 }
 
@@ -37,7 +40,8 @@
 
 
 .overview {
-    max-height: 200px;
+    height: 20%;
+    /* max-height: 200px; */
     /* Adjust the max height as needed */
     overflow-y: auto;
     margin-top: 10px;
@@ -55,16 +59,29 @@
 }
 
 /* Movie Detail Text */
-.movie-details p {
+.movie-details .pp {
     margin: 0;
     /* padding: 10px 0; */
     font-size: 18px;
+    font-weight: bold;
+    color: black;
 }
 
 /* Loading and Error Styles (Optional) */
 .movie-details-container p {
     font-size: 18px;
     /* text-align: center; */
+}
+
+.check {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 0%;
+
+}
+
+.check img {
+    width: 25%;
 }
 
 /* Responsive Styling (Optional) */
@@ -84,5 +101,7 @@
 
     .movie-details p {
         font-size: 16px;
+        font-weight: bold;
+        color: black;
     }
 }

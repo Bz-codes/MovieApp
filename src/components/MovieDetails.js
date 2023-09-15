@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 // import Banner from "./Banner";
 import SideBar from "./SideBar";
+import Footer from "./Footer";
 import "./MovieDetails.css";
+import sis from "./sis.png";
+import seven from "./seven.png";
+import eight from "./eight.png";
 
 const API_KEY = "f3f44a75534292b8d16765e12e6e37d7";
 const API_BASE_URL = "https://api.themoviedb.org/3";
@@ -34,29 +38,48 @@ function MovieDetails() {
   };
 
   return (
-    <div className="movie-details-container">
-      <SideBar />
-      <div className="moviecard">
-        {loading && <p>Loading...</p>}
-        {error && <p>Error: {error}</p>}
+    <div>
+      <div className="movie-details-container">
+        <SideBar />
+        <div className="moviecard">
+          {loading && <p>Loading...</p>}
+          {error && <p>Error: {error}</p>}
 
-        {movieDetails.poster_path && (
-          <img
-            src={`${IMAGE_BASE_URL}${movieDetails.poster_path}`}
-            alt={movieDetails.title}
-          />
-        )}
+          {movieDetails.poster_path && (
+            <img
+              src={`${IMAGE_BASE_URL}${movieDetails.poster_path}`}
+              alt={movieDetails.title}
+            />
+          )}
 
-        {/* Movie details */}
-        <div className="movie-details">
-          <h2 className="movie-title">{movieDetails.title}</h2>
-          <p>Release Date: {movieDetails.release_date}</p>
-          <p>Runtime: {movieDetails.runtime} minutes</p>
-          <div className="overview">
-            <p>{movieDetails.overview}</p>
+          {/* Movie details */}
+          <div className="movie-details">
+            <h2 className="movie-title">{movieDetails.title}</h2>
+            <p className="pp">
+              <li>{movieDetails.release_date} </li>
+            </p>
+            <p className="pp">
+              <li>{movieDetails.runtime} minutes</li>
+            </p>
+            <div className="overview">
+              <p>{movieDetails.overview}</p>
+            </div>
+            <div className="check">
+              <img src={sis} alt="sis" className="sis" />
+              <br />
+              <a href="#">
+                <img src={seven} alt="seven" className="seven" />
+              </a>
+              <a href="#">
+                <img src={eight} alt="eight" className="eight" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 }
