@@ -37,7 +37,9 @@ function Banner() {
           assassins guild, nd with a $14 million price tag on his head, he is
           the target of hit men and women everywhere.
         </p>
-        <img src={Button} alt="Button" className="button" />
+        <a href="#">
+          <img src={Button} alt="Button" className="button" />
+        </a>
 
         {/* Other content of your banner */}
       </div>

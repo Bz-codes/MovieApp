@@ -36,8 +36,8 @@ function Footer() {
 
       <div>
         <h4>
-          Conditions of Use{" "}
-          <span style={{ padding: "2em" }}> Privacy & Policy </span> Press Room
+          Conditions of Use{""}
+          <span style={{ padding: "1em" }}> Privacy & Policy </span> Press Room
         </h4>
       </div>
       <p>&copy; 2023 MovieBox by Marvelous Obiji. All Rights Reserved.</p>

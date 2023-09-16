@@ -54,15 +54,17 @@ function MovieDetails() {
 
           {/* Movie details */}
           <div className="movie-details">
-            <h2 className="movie-title">{movieDetails.title}</h2>
-            <p className="pp">
+            <h2 data-testid="movie-title" className="movie-title">
+              {movieDetails.title}
+            </h2>
+            <p data-testid="movie-release-date" className="pp">
               <li>{movieDetails.release_date} </li>
             </p>
-            <p className="pp">
+            <p data-testid="movie-runtime" className="pp">
               <li>{movieDetails.runtime} minutes</li>
             </p>
             <div className="overview">
-              <p>{movieDetails.overview}</p>
+              <p data-testid="movie-overview">{movieDetails.overview}</p>
             </div>
             <div className="check">
               <img src={sis} alt="sis" className="sis" />

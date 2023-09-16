@@ -19,3 +19,22 @@
 .five {
     margin-bottom: 2em;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        /* Full width for mobile */
+        padding: 10px;
+        /* Adjust padding for mobile */
+        height: auto;
+        /* Remove fixed height for mobile */
+        border-radius: 0;
+        /* Remove border-radius for mobile */
+    }
+
+    .one,
+    .five {
+        margin: 10px 0;
+        /* Adjust margins for mobile */
+    }
+}

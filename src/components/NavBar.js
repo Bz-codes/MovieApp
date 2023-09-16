@@ -11,7 +11,7 @@ function NavBar() {
         <a href="#">
           <img src={Logo} alt="Logo" className="bannerLogo" />
         </a>
-        <h2 className="navbar-text">Your Brand</h2>
+        <h2 className="navbar-text">MovieBox</h2>
       </div>
 
       <Search />

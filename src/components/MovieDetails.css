@@ -87,21 +87,39 @@
 /* Responsive Styling (Optional) */
 @media (max-width: 768px) {
     .movie-details-container {
+        flex-direction: column;
+        /* Stack elements vertically on mobile */
+        margin-top: 0;
         padding: 10px;
-        top: -50px;
-    }
-
-    .movie-banner {
-        height: 300px;
+        /* Reduce padding for mobile */
     }
 
     .movie-title {
         font-size: 24px;
+        /* Decrease font size for mobile */
     }
 
-    .movie-details p {
+    .moviecard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* Full width for mobile */
+        margin: 10px 0;
+        /* Add spacing for mobile */
+    }
+
+    .overview {
+        max-height: none;
+        /* Remove max-height for mobile */
+    }
+
+    .movie-details .pp {
         font-size: 16px;
-        font-weight: bold;
-        color: black;
+        /* Decrease font size for mobile */
+    }
+
+    .check img {
+        width: 50%;
+        /* Adjust image size for mobile */
     }
 }

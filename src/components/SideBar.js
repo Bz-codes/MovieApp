@@ -10,13 +10,13 @@ import five from "./five.png";
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <a href="#">
+      <a href="/">
         <img src={one} alt="one" className="one" />
       </a>
       <br />
       <br />
       <br />
-      <a href="#">
+      <a href="/">
         <img src={two} alt="two" className="two" />
       </a>
       <br />
